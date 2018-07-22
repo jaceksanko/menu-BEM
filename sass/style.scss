@@ -157,3 +157,92 @@ header {
   }
 }
 
+
+
+
+@media (max-width: 768px) {
+  
+
+  header {
+    position: relative;
+    nav {
+      flex-direction: column-reverse;
+      position: absolute;
+      width: 198px;
+      height: 100vh;
+      top: 93px;
+      right: 0;
+      background-color: #000000;
+      ul.menu-contact {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 17px;
+        li {
+          padding-left: 47px;
+          &:first-child::before {
+            width: 13px;
+            height: 21px;
+            right: 121px;
+          }
+          &:last-child::before {
+            width: 22px;
+            height: 17px;
+          }
+          a {
+            font-size: 0.875rem;
+          }
+        }
+      }
+      ul.menu-nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        li {
+          padding: 0;
+          width: 100%;
+          a {
+            display: inline-block;
+            padding: 12px 20px 17px 20px;
+          }
+          &:first-child {
+            ul.sub-menu-nav {
+              border-top: 0;
+              position: static;
+              width: 100%;
+              left: 0;
+              top: 0;
+              display: none;
+              z-index: 1;
+              transform: translateY(0);
+              transition: transform 2s;
+              a {
+                padding: 0;
+              }
+            }
+          }
+          &:hover {
+            ul.sub-menu-nav {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div.jumbotron {
+    background-image: url('../images/layer-2-mobile.png');
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1169px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  header nav ul.menu-contact li {
+    padding-bottom: 5px;
+  }
+}
