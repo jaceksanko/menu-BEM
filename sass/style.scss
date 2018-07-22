@@ -157,11 +157,50 @@ header {
   }
 }
 
+/* Hamburger menu start*/
 
+#menu-icon {
+  position: absolute;
+  top: 30px;
+  right: 13px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-icon-open-close {
+  display: none;
+}
+
+
+[class*='menu-icon-line-'] {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.line-menu-icon-move .menu-icon-line-1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.line-menu-icon-move .menu-icon-line-2 {
+  opacity: 0;
+}
+
+.line-menu-icon-move .menu-icon-line-3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
 
 
 @media (max-width: 768px) {
-  
+  .menu-open-close {
+    display: none;
+  }
+  .menu-icon-open-close {
+    display: block;
+  }
 
   header {
     position: relative;

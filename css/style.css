@@ -578,10 +578,6 @@ header .jumbotron {
   display: none;
 }
 
-.menu-open-close {
-  display: block;
-}
-
 [class*='menu-icon-line-'] {
   width: 35px;
   height: 5px;
@@ -600,39 +596,6 @@ header .jumbotron {
 
 .line-menu-icon-move .menu-icon-line-3 {
   transform: rotate(45deg) translate(-8px, -8px);
-}
-
-.fadeInDown {
-  animation-name: fadeInDown;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.fadeOutUp {
-  animation-name: fadeOutUp;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-@keyframes fadeOutUp {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
 }
 
 @media (max-width: 768px) {
