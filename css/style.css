@@ -504,9 +504,6 @@ header nav ul.menu-nav li:first-child ul.sub-menu-nav {
   left: -10px;
   top: 46px;
   visibility: hidden;
-  z-index: -1;
-  transform: translateY(-1em);
-  transition: transform 1s;
   background-color: #ffffff;
 }
 
@@ -532,9 +529,6 @@ header nav ul.menu-nav li:first-child ul.sub-menu-nav li:last-child {
 
 header nav ul.menu-nav li:first-child:hover ul.sub-menu-nav {
   visibility: visible;
-  opacity: 1;
-  z-index: 1;
-  transform: translateY(0%);
 }
 
 header nav ul.menu-nav li:first-child:hover ul.sub-menu-nav li {

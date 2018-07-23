@@ -98,9 +98,6 @@ header {
             left: -10px;
             top: 46px;
             visibility: hidden;
-            z-index: -1;
-            transform: translateY(-1em);
-            transition: transform 1s;
             background-color: #ffffff;
             li {
               border: 0;
@@ -123,9 +120,6 @@ header {
           &:hover {
             ul.sub-menu-nav {
               visibility: visible;
-              opacity: 1;
-              z-index: 1;
-              transform: translateY(0%);
               li {
                 border: 0;
                 &:hover a {
