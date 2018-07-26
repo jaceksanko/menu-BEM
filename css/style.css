@@ -374,7 +374,7 @@ table {
   border-spacing: 0;
 }
 
-html {
+.page {
   box-sizing: border-box;
   font-size: 16px;
 }
@@ -390,23 +390,23 @@ html {
   margin: 0 auto;
 }
 
-header {
+.header {
   background-color: #000000;
 }
 
-header .logo {
+.header .header__logo {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
-header img {
+.header .header__img {
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-header .box-nav-logo {
+.header .header__navigaction {
   height: 93px;
   display: -ms-flexbox;
   display: flex;
@@ -416,7 +416,7 @@ header .box-nav-logo {
       justify-content: space-between;
 }
 
-header nav {
+.header .menu {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -425,7 +425,7 @@ header nav {
       justify-content: flex-end;
 }
 
-header nav ul.menu-contact {
+.header .menu .menu__contact {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -439,7 +439,7 @@ header nav ul.menu-contact {
       align-items: flex-end;
 }
 
-header nav ul.menu-contact a {
+.header .menu .menu__contact .menu__contact__a {
   text-decoration: none;
   color: #f93542;
   font-family: "Open Sans";
@@ -447,27 +447,27 @@ header nav ul.menu-contact a {
   font-weight: 400;
 }
 
-header nav ul.menu-contact li {
+.header .menu .menu__contact .menu__contact__li {
   padding: 12px 0;
   padding-left: 78px;
   position: relative;
 }
 
-header nav ul.menu-contact li:first-child::before {
+.header .menu .menu__contact .menu__contact__li--phone::before {
   content: url("../images/shape-5.svg");
   position: absolute;
   top: 11px;
   right: 117px;
 }
 
-header nav ul.menu-contact li:last-child::before {
+.header .menu .menu__contact .menu__contact__li--mail::before {
   content: url("../images/shape-6.svg");
   position: absolute;
   top: 13px;
   right: 151px;
 }
 
-header nav ul.menu-nav {
+.header .menu .menu__nav {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -481,20 +481,20 @@ header nav ul.menu-nav {
       align-items: flex-end;
 }
 
-header nav ul.menu-nav li {
+.header .menu .menu__nav .menu__nav__li {
   padding: 12px 20px 17px 20px;
 }
 
-header nav ul.menu-nav li:hover a {
+.header .menu .menu__nav .menu__nav__li:hover .menu__nav__a {
   color: #f93542;
 }
 
-header nav ul.menu-nav li:first-child {
+.header .menu .menu__nav .menu__nav__li--sub-menu {
   text-decoration: none;
   position: relative;
 }
 
-header nav ul.menu-nav li:first-child ul.sub-menu-nav {
+.header .menu .menu__nav .menu__nav__li--sub-menu .menu__nav__sub-menu {
   border-top: 4px solid #f93542;
   width: 128px;
   list-style: none;
@@ -507,43 +507,43 @@ header nav ul.menu-nav li:first-child ul.sub-menu-nav {
   background-color: #ffffff;
 }
 
-header nav ul.menu-nav li:first-child ul.sub-menu-nav li {
+.header .menu .menu__nav .menu__nav__li--sub-menu .menu__nav__sub-menu .menu__nav__sub-menu__li {
   border: 0;
   padding: 13px 55px 13px 19px;
 }
 
-header nav ul.menu-nav li:first-child ul.sub-menu-nav li a {
+.header .menu .menu__nav .menu__nav__li--sub-menu .menu__nav__sub-menu .menu__nav__sub-menu__li .menu__nav__a--sub-menu {
   color: #000000;
   font-size: 0.938rem;
   font-weight: 400;
   text-transform: capitalize;
 }
 
-header nav ul.menu-nav li:first-child ul.sub-menu-nav li:first-child {
+.header .menu .menu__nav .menu__nav__li--sub-menu .menu__nav__sub-menu .menu__nav__sub-menu__li .menu__nav__sub-menu__li--first {
   padding-top: 26px;
 }
 
-header nav ul.menu-nav li:first-child ul.sub-menu-nav li:last-child {
+.header .menu .menu__nav .menu__nav__li--sub-menu .menu__nav__sub-menu .menu__nav__sub-menu__li .menu__nav__sub-menu__li--last {
   padding-bottom: 35px;
 }
 
-header nav ul.menu-nav li:first-child:hover ul.sub-menu-nav {
+.header .menu .menu__nav .menu__nav__li--sub-menu:hover .menu__nav__sub-menu {
   visibility: visible;
 }
 
-header nav ul.menu-nav li:first-child:hover ul.sub-menu-nav li {
+.header .menu .menu__nav .menu__nav__li--sub-menu:hover .menu__nav__sub-menu .menu__nav__sub-menu__li {
   border: 0;
 }
 
-header nav ul.menu-nav li:first-child:hover ul.sub-menu-nav li:hover a {
+.header .menu .menu__nav .menu__nav__li--sub-menu:hover .menu__nav__sub-menu .menu__nav__sub-menu__li:hover .menu__nav__a--sub-menu {
   color: #f93542;
 }
 
-header nav ul.menu-nav li:last-child {
+.header .menu .menu__nav .menu__nav__li--last {
   padding-right: 0;
 }
 
-header nav ul.menu-nav a {
+.header .menu .menu__nav .menu__nav__a {
   text-decoration: none;
   color: #ffffff;
   font-family: "Open Sans";
@@ -551,7 +551,7 @@ header nav ul.menu-nav a {
   text-transform: uppercase;
 }
 
-header .jumbotron {
+.header .header__jumbotron {
   background-image: url("../images/layer-2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -559,7 +559,7 @@ header .jumbotron {
 }
 
 /* Hamburger menu start*/
-#menu-icon {
+.menu-icon {
   position: absolute;
   top: 30px;
   right: 13px;
@@ -568,11 +568,11 @@ header .jumbotron {
   cursor: pointer;
 }
 
-.menu-icon-open-close {
+.menu-icon__open-close {
   display: none;
 }
 
-[class*='menu-icon-line-'] {
+.menu-icon__line {
   width: 35px;
   height: 5px;
   background-color: white;
@@ -580,35 +580,15 @@ header .jumbotron {
   transition: 0.4s;
 }
 
-.line-menu-icon-move .menu-icon-line-1 {
+.menu-icon__line--move .menu-icon__line--1 {
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.line-menu-icon-move .menu-icon-line-2 {
+.menu-icon__line--move .menu-icon__line--2 {
   opacity: 0;
 }
 
-.line-menu-icon-move .menu-icon-line-3 {
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
-[class*='menu-icon-line-'] {
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.line-menu-icon-move .menu-icon-line-1 {
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.line-menu-icon-move .menu-icon-line-2 {
-  opacity: 0;
-}
-
-.line-menu-icon-move .menu-icon-line-3 {
+.menu-icon__line--move .menu-icon__line--3 {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
@@ -650,16 +630,16 @@ header .jumbotron {
     width: 100%;
     padding: 10px;
   }
-  .menu-open-close {
-    display: none;
-  }
-  .menu-icon-open-close {
+  .menu-icon__open-close {
     display: block;
   }
-  header {
+  .header {
     position: relative;
   }
-  header nav {
+  .header .js-menu {
+    display: none;
+  }
+  .header .menu {
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     position: absolute;
@@ -670,7 +650,7 @@ header .jumbotron {
     background-color: #000000;
     box-shadow: 0px 0px 15px 100vw rgba(0, 0, 0, 0.5);
   }
-  header nav ul.menu-contact {
+  .header .menu .menu__contact {
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-pack: start;
@@ -679,22 +659,22 @@ header .jumbotron {
         align-items: flex-start;
     padding-top: 17px;
   }
-  header nav ul.menu-contact li {
+  .header .menu .menu__contact .menu__contact__li {
     padding-left: 47px;
   }
-  header nav ul.menu-contact li:first-child::before {
+  .header .menu .menu__contact .menu__contact__li--phone::before {
     width: 13px;
     height: 21px;
     right: 121px;
   }
-  header nav ul.menu-contact li:last-child::before {
+  .header .menu .menu__contact .menu__contact__li--mail::before {
     width: 22px;
     height: 17px;
   }
-  header nav ul.menu-contact li a {
+  .header .menu .menu__contact .menu__contact__a {
     font-size: 0.875rem;
   }
-  header nav ul.menu-nav {
+  .header .menu .menu__nav {
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-pack: start;
@@ -702,15 +682,15 @@ header .jumbotron {
     -ms-flex-align: start;
         align-items: flex-start;
   }
-  header nav ul.menu-nav li {
+  .header .menu .menu__nav .menu__nav__li {
     padding: 0;
     width: 100%;
   }
-  header nav ul.menu-nav li a {
+  .header .menu .menu__nav .menu__nav__li .menu__nav__a {
     display: inline-block;
     padding: 12px 20px 17px 20px;
   }
-  header nav ul.menu-nav li:first-child ul.sub-menu-nav {
+  .header .menu .menu__nav .menu__nav__li .menu__nav__sub-menu {
     border-top: 0;
     position: static;
     width: 100%;
@@ -718,13 +698,13 @@ header .jumbotron {
     top: 0;
     display: none;
   }
-  header nav ul.menu-nav li:first-child ul.sub-menu-nav a {
+  .header .menu .menu__nav .menu__nav__li .menu__nav__sub-menu .menu__nav__a--sub-menu {
     padding: 0;
   }
-  header nav ul.menu-nav li:hover ul.sub-menu-nav {
+  .header .menu .menu__nav .menu__nav__li:hover .menu__nav__sub-menu {
     display: block;
   }
-  div.jumbotron {
+  .header__jumbotron {
     background-image: url("../images/layer-2-mobile.png");
     height: 100vh;
   }
